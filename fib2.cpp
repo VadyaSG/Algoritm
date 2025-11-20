@@ -5,14 +5,14 @@ int fib(int n)
 {
     if (n <= 1) return n; 
     vector<int> num(n + 1);
-    num[0]{ 0 };
-    num[1]{ 1 };
+    num[0] = 0;
+    num[1] = 1;
 
     for (int i{2}; i <= n; i++)
     {
-        num[i] = num[i - 1] + num[i - 2];
-        return num[n];
+        num[i] = num[i - 1] + num[i - 2];  
     }
+      return num[n];
 }
 
   int main() 
@@ -25,6 +25,7 @@ int fib(int n)
         std::cout << std::endl;
         return 0;
     }
+
 
 
 
