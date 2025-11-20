@@ -8,12 +8,13 @@ int fib(int n)
 
   int main() 
     {
-        int n = 20;
-        for (int i = 0; i < n; i++) {
+        int n { 20 };
+        for (int i{ 0 }; i < n; i++) {
           std::cout << fib(i) << " ";
         }
         return 0;
     }
+
 
 
 
