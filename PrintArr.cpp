@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 
 void print_dynamic_array(int* arr, int logical_size, int actual_size);
 
@@ -9,27 +9,27 @@ int main()
 	int actual_size{};
 	int logicaal_size{};
 
-	std::cout << "Ââåäèòå ôàêòè÷åñêèé ðàçìåð ìàññèâà: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ„Ð°ÐºÑ‚Ð¸Ñ‡ÐµÑÐºÐ¸Ð¹ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
 	std::cin >> actual_size;
 
-	std::cout << "Ââåäèòå ëîãè÷åñêèé ðàçìåð ìàññèâà: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð»Ð¾Ð³Ð¸Ñ‡ÐµÑÐºÐ¸Ð¹ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
 	std::cin >> logicaal_size;
 
 	if (logicaal_size > actual_size)
 	{
-		std::cout << "Ëîãè÷åñêèé ðàçìåð íå ìîæåò áûòü áîëüøå ôàêòè÷åñêîãî! "<<std::endl;
+		std::cout << "Ð›Ð¾Ð³Ð¸Ñ‡ÐµÑÐºÐ¸Ð¹ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚ Ð±Ñ‹Ñ‚ÑŒ Ð±Ð¾Ð»ÑŒÑˆÐµ Ñ„Ð°ÐºÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ð³Ð¾! "<<std::endl;
 		return 1;
 	}
 	int* arr = new int[actual_size];
-	std::cout << "Ââåäèòå: " << logicaal_size << " Ýëåìåíòîâ ìàññèâà: "<<std::endl;
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ: " << logicaal_size << " Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: "<<std::endl;
 
 	for (int i{ 0 }; i < logicaal_size; ++i)
 	{
-		std::cout << "Ââåäèòå Arr[" << i << "]: ";
+		std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Arr[" << i << "]: ";
 		std::cin >> arr[i];
 	}
 
-	std::cout << "Ïîëó÷åííûé ìàññèâ: ";
+	std::cout << "ÐŸÐ¾Ð»ÑƒÑ‡ÐµÐ½Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð²: ";
 	print_dynamic_array(arr, logicaal_size, actual_size);
 	delete[]arr;
 	return 0;
